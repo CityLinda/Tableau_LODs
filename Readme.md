@@ -6,9 +6,8 @@
 
 
 * Figure1 shows the view of Category, Sub-Category, Product Name and Sum of Sales.
-
 ![](Images/Figure1.JPG)
-&NewLine;When pulling in the Average Line from the Tableau Analytics Pane to the Pane Level for average line for each Category and Sub-Category, the   Average sales of Bookcases is 8835.
+  When pulling in the Average Line from the Tableau Analytics Pane to the Pane Level for average line for each Category and Sub-Category, the   Average sales of Bookcases is 8835.
 
  * What if one likes to view the Sub-Categories on one page without having the product name in the view? Figure 2 shows Average sales for      Bookcases is a much smaller amount 603.8. So, what happened? How does Tableau calculate the Averages?
 ![](Images/Figure2.JPG)
