@@ -5,25 +5,24 @@
   https://community.tableau.com/s/question/0D54T00000C5vSDSAZ/global-superstore-data-file?t=1595530793707
 
 
-* Figure1 shows the view of Category, Sub-Category, Product Name and Sum of Sales.</font>
+* Figure1 shows the view of Category, Sub-Category, Product Name and Sum of Sales.
 
-![](images/Figure1.JPG)
+![](Images/Figure1.JPG)
+When pulling in the Average Line from the Tableau Analytics Pane to the Pane Level for average line for each Category and Sub-Category, the   Average sales of Bookcases is 8835.
 
-  <font size=2>When pulling in the Average Line from the Tableau Analytics Pane to the Pane Level for average line for each Category and Sub-Category, the   Average sales of Bookcases is 8835.
+ * What if one likes to view the Sub-Categories on one page without having the product name in the view? Figure 2 shows Average sales for      Bookcases is a much smaller amount 603.8. So, what happened? How does Tableau calculate the Averages?
+![](Images/Figure2.JPG)
+ Let’s first understand how Tableau calculates the Average in Figure 1. Hovering mouse over Sub-Category Bookcases,  the view shows total of   166 items of Product Name in the Sub-category Bookcases and sum of sales for the Bookcases sub-category is 1,466,572. Tableau divides   product sales by the sum of Bookcases sales, which is the average sales of 8835, It is illustrated in Figure3.
+![](Images/Figure3.JPG)
 
- * What if one likes to view the Sub-Categories on one page without having the product name in the view? Figure 2 shows Average sales for      Bookcases is a much smaller amount 603.8. So, what happened? How does Tableau calculate the Averages?</font>
-![](images/Figure2.JPG)
-   <font size=2>Let’s first understand how Tableau calculates the Average in Figure 1. Hovering mouse over Sub-Category Bookcases,  the view shows total of   166 items of Product Name in the Sub-category Bookcases and sum of sales for the Bookcases sub-category is 1,466,572. Tableau divides   product sales by the sum of Bookcases sales, which is the average sales of 8835, It is illustrated in Figure3.</font>
-![](images/Figure3.JPG)
-<font size=2>
 * How does Tableau calculate the average sales of 603.8 on Bookcases Sub-Category shown in Figure2 ?
 
   Tableau calculates the average sales of Bookcases category as:
   Average Sales2 = SUM([Sales])/COUNT([Orders])  (Shown in Calcuation1)
 
-* Put the Average Sale2 and original Average Sales shown in the Figure2 side by side in the cross tab view in Figure4, it proves how Tableau   performs its average sales calculation in the Category and sub-category.</font>
-![](images/Figure2.JPG)
-<fong size=2>
+* Put the Average Sale2 and original Average Sales shown in the Figure2 side by side in the cross tab view in Figure4, it proves how Tableau   performs its average sales calculation in the Category and sub-category.
+![](Images/Figure4.JPG)
+
 * Back to the LOD, to have the view of detailed level of aggregation (average product sales) without the product name in the view, we need a   FIXED LOD. 
   Fixed_Sales_by_Product_Name={FIXED [Product Name]:SUM([Sales])}   (shown in Calculation3)
 
