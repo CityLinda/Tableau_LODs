@@ -4,11 +4,10 @@
 
   https://community.tableau.com/s/question/0D54T00000C5vSDSAZ/global-superstore-data-file?t=1595530793707
 
-* Image files for the example are stored at the folder "Images".
 
 * Figure1 shows the view of Category, Sub-Category, Product Name and Sum of Sales.
 
-![alt text](/images/Figure1.JPG)
+![alt text](images/Figure1.JPG)
 
   When pulling in the Average Line from the Tableau Analytics Pane to the Pane Level for average line for each Category and Sub-Category, the   Average sales of Bookcases is 8835.
 
